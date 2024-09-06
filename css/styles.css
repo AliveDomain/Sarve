@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+ /* Prevent content from going behind navbar */
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Caption background with opacity */
+}
+
+.dots-container {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.main-content h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #ff6f61; /* Bright Coral */
+}
+
+.main-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.view-products-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61; /* Bright Coral */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #ff6f61; /* Bright Coral */
+    color: white;
+    text-align: center;
+    padding: 15px 10px; /* Default padding */
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Adjust height automatically based on content */
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10px 5px; /* Reduce padding on medium screens */
+        font-size: 0.9em;  /* Slightly smaller font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 8px 3px; /* Further reduce padding on small screens */
+        font-size: 0.8em;  /* Smaller font size for mobile screens */
+    }
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        font-size: 1em;
+    }
+
+    .main-content h2 {
+        font-size: 1.2em;
+    }
+
+    .main-content p {
+        font-size: 1em;
+    }
+
+    .view-products-button {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        max-width: 95%;
+    }
+
+    footer {
+        padding: 1px;
+    }
+}

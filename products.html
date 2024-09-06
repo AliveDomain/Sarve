@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css"> <!-- New CSS for the product page -->
+    <link rel="stylesheet" href="css/navbar.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">Products</div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="product-list">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="img/product1.jpg" alt="Product 1" class="product-image">
+            <div class="product-info">
+                <h3>Product 1</h3>
+            <p class="product-serial">Serial Number: 12345</p>
+            <p class="product-description">This is a great product.</p>
+            <a href="javascript:void(0);" class="whatsapp-button" onclick="contactWhatsApp('12345', 'img/product1.jpg')">Contact via WhatsApp</a>
+            <a href="javascript:void(0);" class="email-button" onclick="contactEmail('12345', 'Product 1', 'img/product1.jpg')">Contact via Email</a>
+            </div>
+        </div>
+
+        <!-- Add similar blocks for the remaining 19 products -->
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="img/product2.jpg" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <h3>Product 1</h3>
+            <p class="product-serial">Serial Number: 12346</p>
+            <p class="product-description">Another amazing product.</p>
+            <a href="javascript:void(0);" class="whatsapp-button" onclick="contactWhatsApp('12346', 'img/product2.jpg')">Contact via WhatsApp</a>
+            <a href="javascript:void(0);" class="email-button" onclick="contactEmail('12346', 'Product 2', 'img/product2.jpg')">Contact via Email</a>
+            </div>
+        </div>
+
+        <!-- Continue adding product cards up to product 20 -->
+
+    </section>
+
+    <footer id="bottom">
+        <p>Contact us at <a href="mailto:doworkvikram@gmail.com">doworkvikram@gmail.com</a> or call +91 9682455696.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/navbar.js"></script> <!-- New JS file for the product page -->
+</body>
+</html>

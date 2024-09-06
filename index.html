@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Product Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">सर्वे</div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="slider">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 2</div>
+            <img src="img/slider1.jpg" style="width:100%" title="Slider Image 1">
+              <div class="text">Static Portfolio</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 2</div>
+            <img src="img/slider2.jpg" style="width:100%" title="Slider Image 2">
+              <div class="text">Dyanmic Portfolio</div>
+            </div>
+            
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+    </section>
+
+    <section class="main-content">
+        <h2>Explore Our Products</h2>
+        <p>Discover our wide range of products. Click the button below to view all products.</p>
+        <a href="products.html" class="view-products-button">View All Products</a>
+    </section>
+
+    <footer id="bottom">
+        <p>Contact us at <a href="mailto:doworkvikram@gmail.com">doworkvikram@gmail.com</a> or call +91 9682455696.</p>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
